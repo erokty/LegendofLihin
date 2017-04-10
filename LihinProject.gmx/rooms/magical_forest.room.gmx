@@ -243,9 +243,6 @@
     <instance objName="obj_vk_a" x="-736" y="64" name="inst_68760635" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="sound_forest" x="544" y="0" name="inst_1245D1DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="event_forest" x="384" y="576" name="inst_78E61246" locked="0" code="namanpc[0]=&quot;Reyna&quot;;&#xA;text[0]=&quot;What a peaceful place.&quot;&#xA;namanpc[1]=&quot;Reyna&quot;;&#xA;text[1]=&quot;I love it.&quot;;&#xA;namanpc[2]=&quot;Lihin&quot;;&#xA;text[2]=&quot;Yeah.&quot;;&#xA;namanpc[3]=&quot;Lihin&quot;;&#xA;text[3]=&quot;Hopefully we can find some clues in this place.&quot;;&#xA;namanpc[4]=&quot;Pyro&quot;;&#xA;text[4]=&quot;You seems to be obsessed to hunt town the dragon, Lihin.&quot;;&#xA;namanpc[5]=&quot;Lihin&quot;;&#xA;text[5]=&quot;That’s why I need your help pyro.&quot;;&#xA;namanpc[6]=&quot;Pyro&quot;;&#xA;text[6]=&quot;Haha...Of course.&quot;;&#xA;&#xA;totalLines = 7;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dungeon" x="416" y="928" name="inst_73DEA7E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dungeon" x="1248" y="480" name="inst_ABAF0AA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dungeon" x="992" y="992" name="inst_1C6C3BF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="736" y="0" name="inst_E0F43D48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="0" y="448" name="inst_70157B18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="0" y="576" name="inst_7798663C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -341,6 +338,12 @@
     <instance objName="obj_gate" x="896" y="448" name="inst_458EB00D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gate" x="896" y="480" name="inst_EE0D38B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gate" x="864" y="480" name="inst_5EB7130A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dungeon_orc" x="960" y="992" name="inst_9D23AFBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dungeon_orc" x="1248" y="480" name="inst_5A642684" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dungeon_orc" x="384" y="928" name="inst_9CC763E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dungeon_ogre" x="416" y="928" name="inst_B63E192E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dungeon_ogre" x="1248" y="448" name="inst_8BC9E1AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dungeon_ogre" x="992" y="992" name="inst_5A5BACFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background8" x="32" y="64" w="32" h="32" xo="0" yo="64" id="10010058" name="inst_31FD723C" depth="900" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

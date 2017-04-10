@@ -83,7 +83,15 @@
     </sprites>
     <sprite>sprites\inventory_items</sprite>
     <sprite>sprites\inventory_border</sprite>
-    <sprite>sprites\spr_monster</sprite>
+    <sprites name="monsters">
+      <sprite>sprites\mummy</sprite>
+      <sprite>sprites\spider</sprite>
+      <sprite>sprites\orc</sprite>
+      <sprite>sprites\ogre</sprite>
+      <sprite>sprites\phoenix</sprite>
+      <sprite>sprites\centaur</sprite>
+      <sprite>sprites\dragon</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\tiles_all</background>
@@ -180,7 +188,10 @@
       <object>objects\shop_buy</object>
     </objects>
     <objects name="battle">
-      <object>objects\obj_dungeon</object>
+      <object>objects\obj_dungeon_spider</object>
+      <object>objects\obj_dungeon_ogre</object>
+      <object>objects\obj_dungeon_mummy</object>
+      <object>objects\obj_dungeon_orc</object>
       <object>objects\menu_battle</object>
     </objects>
     <objects name="Sound">
@@ -199,7 +210,13 @@
       <object>objects\lihin_battle</object>
       <object>objects\reyna_battle</object>
       <object>objects\pyro_battle</object>
-      <object>objects\obj_monster</object>
+      <object>objects\obj_spider</object>
+      <object>objects\obj_ogre</object>
+      <object>objects\obj_mummy</object>
+      <object>objects\obj_orc</object>
+      <object>objects\obj_phoenix</object>
+      <object>objects\obj_centaur</object>
+      <object>objects\obj_dragon</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -226,7 +243,15 @@
       <room>rooms\weapon_shop</room>
       <room>rooms\casino</room>
     </rooms>
-    <room>rooms\Room_battle</room>
+    <rooms name="battle_room">
+      <room>rooms\spider_room</room>
+      <room>rooms\mummy_room</room>
+      <room>rooms\ogre_room</room>
+      <room>rooms\orc_room</room>
+      <room>rooms\phoenix_room</room>
+      <room>rooms\centaur_room</room>
+      <room>rooms\dragon_room</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
