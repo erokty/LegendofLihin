@@ -25,13 +25,72 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(obj_menu_status)
+            <string>battle_manage.kembali = Title_screen;
+global.monstername = "Dragon"
+global.monsterhp = 2100;
+global.monsterattack = 150;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(obj_lihin)
 {
-    instance_destroy();
+    visible=true;
 }
 with(obj_menu_button)
 {
-    instance_destroy();
+    visible=true;
+}
+
+scr_itempickup(6);
+scr_expgain();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(obj_lihin)
+{
+    visible=false;
+}
+with(obj_menu_button)
+{
+    visible=false;
 }
 </string>
           </argument>

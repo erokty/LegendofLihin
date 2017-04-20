@@ -30,13 +30,15 @@ Player_y = ystart
 bicara = false;
 ketempatmakan= false;
 free = true;
+global.posisi_y = 0;
+global.posisi_x = 0;
 
 global.gold = 2500;
 global.player_level = 1;
 global.player_exp = 0;
-global.player_lihin_hp = 100;
-global.player_lihin_mp =30;
-global.player_lihin_attack =10;
+global.player_lihin_hp = 600;
+global.player_lihin_mp = 10;
+global.player_lihin_attack =15;
 global.player_lihin_defense=10;
 
 global.player_reyna_hp = 100;
@@ -57,9 +59,8 @@ global.enteringcave = true;
 global.city = true;
 global.forest = true;
 
-//belum jadi 
 
-global.monsterhp = 0; 
+
 
 </string>
           </argument>
@@ -88,7 +89,7 @@ global.monsterhp = 0;
 var hspd = 0;
 var vspd = 0;
 if(bicara=false){
-    if(keyboard_check(vk_escape))
+    if(keyboard_check(vk_numpad0))
     {
         obj_menu_button.lihat_status = true;
         obj_lihin.bicara = true;
@@ -168,8 +169,6 @@ else
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_dungeon_ogre">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -186,30 +185,82 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(ogre_room);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_dungeon_mummy">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_goto(mummy_room);
+            <string>//levelup
+if(global.player_exp &gt;= 10 &amp;&amp; global.player_exp &lt; 20)
+{
+    global.player_level = 2;
+}
+else if(global.player_exp &gt;=20 &amp;&amp; global.player_exp &lt; 40)
+{
+    global.player_level = 3;
+}
+else if(global.player_exp &gt;=40 &amp;&amp; global.player_exp &lt; 80)
+{
+    global.player_level = 4;
+}
+else if(global.player_exp &gt;=80 &amp;&amp; global.player_exp &lt; 160)
+{
+    global.player_level = 5;
+} 
+else if(global.player_exp &gt;=160 &amp;&amp; global.player_exp &lt; 240)
+{
+    global.player_level = 6;
+}
+else if(global.player_exp &gt;=240 &amp;&amp; global.player_exp &lt; 320)
+{
+    global.player_level = 7;
+}
+else if(global.player_exp &gt;=320 &amp;&amp; global.player_exp &lt; 480)
+{
+    global.player_level = 8;
+}
+else if(global.player_exp &gt;=480 &amp;&amp; global.player_exp &lt; 600)
+{
+    global.player_level = 9;
+}
+else if(global.player_exp &gt;=600)
+{
+    global.player_level = 10;
+}
+
+//status up
+if(global.player_level == 2)
+{
+    global.player_lihin_attack =  30;
+}
+if(global.player_level == 3)
+{
+    global.player_lihin_attack = 50;
+}
+if(global.player_level == 4)
+{
+    global.player_lihin_attack = 70;
+}
+if(global.player_level == 5)
+{
+    global.player_lihin_attack =  90;
+}
+if(global.player_level == 6)
+{
+    global.player_lihin_attack =  110;
+}
+if(global.player_level == 7)
+{
+    global.player_lihin_attack = 150;
+}
+if(global.player_level == 8)
+{
+    global.player_lihin_attack = 170;
+}
+if(global.player_level == 9)
+{
+    global.player_lihin_attack =  200;
+}
+if(global.player_level == 10)
+{
+    global.player_lihin_attack = 300;
+}
+
 </string>
           </argument>
         </arguments>
@@ -232,7 +283,59 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(orc_room);
+            <string>global.posisi_x = obj_lihin.x;
+global.posisi_y = obj_lihin.y;
+room_goto(orc_room);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_dungeon_mummy">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.posisi_x = obj_lihin.x;
+global.posisi_y = obj_lihin.y;
+room_goto(mummy_room);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_dungeon_ogre">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.posisi_x = obj_lihin.x;
+global.posisi_y = obj_lihin.y;
+room_goto(ogre_room);
 </string>
           </argument>
         </arguments>
@@ -255,7 +358,9 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(spider_room);
+            <string>global.posisi_x = obj_lihin.x;
+global.posisi_y = obj_lihin.y;
+room_goto(spider_room);
 </string>
           </argument>
         </arguments>

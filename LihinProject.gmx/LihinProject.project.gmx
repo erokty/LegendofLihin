@@ -133,6 +133,10 @@
     <script>scripts\scr_shop1.gml</script>
     <script>scripts\scr_gototransition.gml</script>
     <script>scripts\scr_battle.gml</script>
+    <script>scripts\scr_attack.gml</script>
+    <script>scripts\scr_magic.gml</script>
+    <script>scripts\scr_monster_attack.gml</script>
+    <script>scripts\scr_expgain.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -179,20 +183,25 @@
     </objects>
     <objects name="obj_menu_status">
       <object>objects\menu_player_status</object>
-      <object>objects\obj_menu_status</object>
       <object>objects\menu_inventory</object>
       <object>objects\obj_menu_button</object>
+      <object>objects\obj_menu_status</object>
     </objects>
     <objects name="shop">
       <object>objects\shop_UI</object>
       <object>objects\shop_buy</object>
+      <object>objects\obj_heal</object>
     </objects>
     <objects name="battle">
       <object>objects\obj_dungeon_spider</object>
       <object>objects\obj_dungeon_ogre</object>
       <object>objects\obj_dungeon_mummy</object>
       <object>objects\obj_dungeon_orc</object>
+      <object>objects\battle_manage</object>
       <object>objects\menu_battle</object>
+      <object>objects\obj_dungeon_dragon</object>
+      <object>objects\obj_dungeon_phoenix</object>
+      <object>objects\obj_dungeon_centaur</object>
     </objects>
     <objects name="Sound">
       <object>objects\sound_city1</object>
@@ -226,8 +235,8 @@
     <room>rooms\room_epilog</room>
     <room>rooms\room_city_2</room>
     <rooms name="city1_houses">
-      <room>rooms\shop</room>
       <room>rooms\bar_room</room>
+      <room>rooms\shop</room>
       <room>rooms\lihin_room</room>
       <room>rooms\Mayor_house</room>
     </rooms>

@@ -26,8 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Movement Right
-display_set_gui_size(1920,1080)
-key = virtual_key_add(387,768,128,128,vk_right);
+key = virtual_key_add(256,768,128,128,vk_right);
 </string>
           </argument>
         </arguments>
@@ -52,7 +51,7 @@ key = virtual_key_add(387,768,128,128,vk_right);
             <kind>1</kind>
             <string>/// Draw Arrow
 draw_set_alpha(0.4);
-draw_sprite(spriteKey_right,image_index,387,768);
+draw_sprite(spriteKey_right,image_index,256,768);
 </string>
           </argument>
         </arguments>

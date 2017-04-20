@@ -26,14 +26,17 @@
           <argument>
             <kind>1</kind>
             <string>turnplayer = true;
-
+serang = false;
+magic = false;
+barang = false;
+battle_end = false;
+menang = false;
+kalah = false;
+monsterturn = false;
 menu[0] = "Attack";
-menu[1] = "Defence";
-menu[2] = "Item";
-menu[3] = "Escape"; 
 
 mpos =0; 
-space = 40;
+space = 32;
 
 
 
@@ -73,9 +76,32 @@ if(move != 0)
 
 var push;
 push = max(keyboard_check_pressed(vk_space),0);
-if(push == 1 ) scr_battle();
+if(global.monsterhp &gt; 0 &amp;&amp; global.player_lihin_hp &gt; 0){
+    if(turnplayer == true){
+        if(push == 1 &amp;&amp; mpos == 0){
+        serang = true;
+        }
+    }
+
 }
 
+
+}
+if(global.monsterhp &gt; 0 &amp;&amp; global.player_lihin_hp &gt; 0){
+if(turnplayer == false)
+        {
+            monsterturn = true;
+        }
+}
+else if(global.monsterhp &lt;= 0){
+    battle_end = true;
+
+    menang = true;
+} 
+else if(global.player_lihin_hp &lt;= 0){
+    battle_end = true;
+    kalah = true;
+    }
 </string>
           </argument>
         </arguments>
@@ -98,21 +124,20 @@ if(push == 1 ) scr_battle();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(1); 
-draw_set_colour(c_ltgray);
-draw_rectangle (32,view_hview-208,view_wview-704,view_hview-32,false);
+            <string>draw_set_alpha(1);
+draw_set_font(-1)
+draw_text(128,64,"Party HP  : " + string(global.player_lihin_hp));
+draw_text(540,64,"Monster HP  : " + string(global.monsterhp));
+draw_text(290,64,"Party Attack  : " + string(global.player_lihin_attack));
+draw_text(704,64,"Monster Attack  : " + string(global.monsterattack));
 
 //draw  player stat 
-if(turnplayer = true){
+draw_set_colour(c_ltgray);
+draw_rectangle (32,view_hview-208,view_wview-704,view_hview-32,false);
 draw_set_alpha(1); 
 draw_set_colour(c_black);
-    draw_text(64,384,menu[0]);
-    draw_text(64,416,menu[1]);
-    draw_text(64,448,menu[2]);
-    draw_text(64,480,menu[3]);
-    
-}
-draw_sprite(menu_arrow,0,32,352 + mpos * space);
+draw_text(64,384,menu[0]);
+draw_sprite(menu_arrow,0,32,360 + mpos * space);
 </string>
           </argument>
         </arguments>

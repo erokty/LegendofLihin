@@ -121,7 +121,6 @@
     <instance objName="obj_Collision" x="736" y="64" name="inst_80121F47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="672" y="160" name="inst_486A20AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="672" y="192" name="inst_B6B0780E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Collision" x="704" y="192" name="inst_E49B3874" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="704" y="160" name="inst_60C7649E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="736" y="160" name="inst_6DEE0605" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Collision" x="736" y="192" name="inst_E956CDD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -168,6 +167,7 @@
     <instance objName="obj_vk_a" x="-736" y="64" name="inst_3B7C1709" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_button" x="-704" y="64" name="inst_2AF6C5C0" locked="0" code="" scaleX="0.666666686534882" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="sound_epilog" x="160" y="96" name="inst_118E6318" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Collision" x="704" y="192" name="inst_4459F4C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="cafe" x="256" y="192" w="32" h="32" xo="32" yo="0" id="10004980" name="inst_49F59EB5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

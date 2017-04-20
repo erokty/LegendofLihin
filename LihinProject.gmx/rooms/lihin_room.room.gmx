@@ -196,9 +196,9 @@
     <instance objName="obj_vk_a" x="-736" y="64" name="inst_A29FF004" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_button" x="-704" y="64" name="inst_92415759" locked="0" code="" scaleX="0.666666686534882" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="event_epilog" x="256" y="288" name="inst_553868D5" locked="0" code="namanpc[0]=&quot;Lihin’s mother&quot;;&#xA;text[0]=&quot;Lihin, are you ready to set your journey?&quot;;&#xA;namanpc[1]=&quot;Lihin&quot;;&#xA;text[1]=&quot;Yes mom.&quot;;&#xA;namanpc[2]=&quot;Lihin’s mother&quot;; &#xA;text[2]=&quot;But first, you must eat to regain your energy.&quot;;&#xA;namanpc[3]=&quot;Lihin&quot;; &#xA;text[3]=&quot;Alright.. alright.&quot;;&#xA;namanpc[4]=&quot;&quot;; &#xA;text[4] =&quot;(After eating...)&quot;; &#xA;namanpc[5]=&quot;Lihin&quot; ;&#xA;text[5]=&quot;I'm done mom&quot;;&#xA;namanpc[6]=&quot;Lihin's mother&quot;; &#xA;text[6] =&quot;Okay,Please take care&quot;; &#xA;namanpc[7]=&quot;Lihin&quot;;&#xA;text[7]=&quot;I will mom&quot;;&#xA;&#xA;totalLines = 8&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu_status" x="128" y="96" name="inst_52048DF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="menu_player_status" x="192" y="96" name="inst_8B2DAA24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="menu_inventory" x="192" y="96" name="inst_0F4DA2C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_status" x="0" y="0" name="inst_52048DF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="menu_player_status" x="0" y="0" name="inst_8B2DAA24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="menu_inventory" x="0" y="0" name="inst_0F4DA2C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vk_b" x="-704" y="64" name="inst_CA55F1B7" locked="0" code="" scaleX="0.21875" scaleY="0.165354326367378" colour="4294967295" rotation="0"/>
     <instance objName="sound_epilog" x="160" y="288" name="inst_C8FC50EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
