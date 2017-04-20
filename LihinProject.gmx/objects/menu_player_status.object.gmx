@@ -54,18 +54,37 @@ height = 400;
             <string>/// Draw The String and The box
 if(obj_menu_status.player_status == true){
 draw_set_alpha(1);
+draw_sprite_ext(Lihin_menu,0,96,320,1.5,2,0,-1,1);
+draw_sprite_ext(Reyna_menu,0,416,320,1.5,2,0,-1,1);
+draw_sprite_ext(Pyro_menu,0,736,320,1.5,2,0,-1,1);
 
 draw_set_font(font_player_status);
 draw_set_colour(c_black);
 
+draw_text(128,707,"Lvl  : " + string(global.player_level));
 draw_text(448,707,"Lvl  : " + string(global.player_level));
+draw_text(768,707,"Lvl  : " + string(global.player_level));
 
+draw_text(256,707,"Exp  : " + string(global.player_exp));
 draw_text(576,707,"Exp  : " + string(global.player_exp));
+draw_text(896,707,"Exp  : " + string(global.player_exp));
+
+draw_text(128,728,"HP  : " + string(global.player_lihin_hp));
+draw_text(448,728,"HP  : " + string(global.player_reyna_hp));
+draw_text(768,728,"HP  : " + string(global.player_pyro_hp));
+
+draw_text(256,728,"MP  : " + string(global.player_lihin_mp));
+draw_text(576,728,"MP  : " + string(global.player_reyna_mp));
+draw_text(896,728,"MP  : " + string(global.player_pyro_mp));
+
+draw_text(128,744,"Att   : " + string(global.player_lihin_attack));
+draw_text(448,744,"Att   : " + string(global.player_reyna_attack));
+draw_text(768,744,"Att   : " + string(global.player_pyro_attack));
 
 
-
-
-
+draw_text(256,744,"Def  : " + string(global.player_lihin_defense));
+draw_text(576,744,"Def  : " + string(global.player_reyna_defense));
+draw_text(896,744,"Def  : " + string(global.player_pyro_defense));
 
 draw_set_alpha(1);
 draw_set_colour(c_black);
